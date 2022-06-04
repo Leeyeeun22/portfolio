@@ -1,0 +1,140 @@
+section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.banner-bg{
+    background-image: url('../img/fallbanner.png');
+    background-size: cover;
+    position: absolute;
+    top:0;
+    width:100%;
+}
+
+/* SCint */
+.SCint {
+    margin-top: 35rem;
+}
+
+.SCint .SCImg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+    gap:5rem; 
+}
+
+.SCint .SCImg li{
+    text-align: center;
+    position: relative;
+}
+
+.SCint .SCImg span{
+    display: block;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.SCint .SCImg img{
+    width:20rem;
+}
+
+/* FLPF */
+.FLPF .fl-container{
+    margin-top: 5rem;
+    min-height: 240rem;
+}
+
+.FLPF .fl-container .fl-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:7rem 8rem;
+}
+
+.FLPF .fl-container .fl-box:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.fl-txt h3{
+    font-size: 3.5rem;
+    text-transform:uppercase;
+}
+
+.fl-txt span{
+    display: inline-block;
+    font-size: 3rem;
+    padding:0.2rem;
+    margin-top:1rem;
+}
+
+.fl-txt p{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px){ /* Tablet */
+    .FLPF{
+        width:90%;
+    }
+    .fl-txt{
+        text-align: center;
+        padding:5rem 2rem;
+    }
+    .FLPF .fl-container .fl-box img{
+        width:35%;
+    }
+    .SCint .SCImg img{
+        width:15rem;
+    }
+    .fl-txt h3{
+        font-size: 3rem;
+    }
+    .fl-txt span{
+        font-size: 2.5rem;
+    }
+    .fl-txt p{
+        font-size: 2.2rem;
+    }
+
+}
+@media (max-width:767px){ /* 최대 768 일때 */
+    .SCint .SCImg span{
+        font-size: 2.8rem;
+    }
+    .fl-txt {
+        width:40rem;
+        text-align: center;
+        padding:5rem 2rem;
+    }
+    .FLPF .fl-container .fl-box{
+        padding:0.5rem;
+    }
+
+    .FLPF .fl-container .fl-box img{
+        width:32%;
+    }
+    .SCint .SCImg img{
+        width:15rem;
+    }
+    .fl-txt h3{
+        font-size: 3rem;
+    }
+    .fl-txt span{
+        font-size: 2.5rem;
+    }
+    .fl-txt p{
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:480px){ /* 최대 480 일때 */
+    .SCint .SCImg li img{
+        width:20rem;
+    }
+}

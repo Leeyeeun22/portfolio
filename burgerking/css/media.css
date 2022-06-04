@@ -1,0 +1,81 @@
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* Tablet */
+    html {
+        font-size: 70%;
+    }
+
+    .logo img {
+        height: 6rem;
+    }
+
+    /* 버튼 */
+    .btn {
+        font-size: 1.3rem;
+    }
+    .buttonalign {
+        margin-top: 2rem;
+    }
+
+    /* nav 메뉴 */
+    .mainmenu li a {
+        width: 10rem;
+        font-size: 1.8rem;
+    }
+    .submenu li a {
+        font-size: 1.3rem;
+    }
+
+    /* 베스트메뉴 슬라이드 */
+    .menubox img {
+        height: 13rem;
+    }
+    .menubox {
+        margin-left: -1rem;
+    }
+    .menubox span {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 62%;
+    }
+    /* header */
+    #header {
+        overflow: visible;
+    }
+    #header .flex .nav {
+        display: none;
+    }
+    #menu-btn {
+        display: inline-block;
+    }
+    .logo img {
+        height: 5.5rem;
+    }
+}
+
+@media (max-width:480px) { /* mobile */
+    html {
+        font-size: 60%;
+    }
+
+    #header {
+        position: sticky;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .banner {
+        margin-top: 0;
+    }
+
+    .buttonalign .btn{
+        margin-top:3rem;
+    }
+
+}

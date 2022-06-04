@@ -1,0 +1,344 @@
+/* reset */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --main-color:#01744e;
+    --sub-color:#ebebeb;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.inner{
+    max-width: 1200px;
+    padding:2rem 3rem;
+    margin:0 auto;
+}
+
+.heading h2{
+    text-align: center;
+    font-size:1.7rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+/* 버튼 모음 */
+
+/* 토글버튼 */
+#menu-btn{
+    font-size: 2.3rem;
+    display: none;
+    cursor: pointer;
+}
+/* 모바일 토글 버튼 */
+#mb_menu-btn{
+    font-size: 2.3rem;
+    cursor: pointer;
+    width:100%;
+    text-align: right;
+    padding:2rem;
+    background-color: var(--main-color);
+    color:white;
+}
+
+/* 기본 버튼 */
+.btn{
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--main-color);
+    color:white;
+    padding:.5rem 1.2rem;
+    border: none;
+    margin-top: 3rem;
+    border-radius: 30px/25px;
+}
+
+.btn:hover{
+    background-color: #01472f;
+}
+
+
+/* header */
+#header{
+    width:100%;
+    background-color: white;
+}
+#header .flex{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo img{
+    height:1.3rem;
+}
+
+/* nav */
+.nav{ /* 메뉴 가운데 */
+    width:41rem;
+    margin:auto;
+}
+
+.nav li{
+    display: inline-block;
+    padding:0 2rem;
+}
+
+.nav li a{
+    text-align: center;
+    color:black;
+    font-size: 1.3rem;
+    width:100%;
+    text-transform: capitalize;
+}
+
+.nav li a::after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0.1rem;
+    background-color: green;
+    transition: width .5s; /* 애니메이션 */
+}
+
+.nav li a:hover::after{
+    width:100%; /* 애니메이션 적용 */
+}
+
+.nav li a:hover{
+    color:var(--main-color);
+}
+
+/* 모바일 메뉴 */
+.mb_nav{
+    width:100%;
+    position:absolute;
+    left:-100%; /* 옆으로 숨김 */
+    top:0;
+    right:0;
+    bottom:0;
+    -webkit-transition: left .3s;
+    -moz-transition: left .3s;
+    -ms-transition: left .3s;
+    -o-transition: left .3s;
+    transition: left .3s;
+    background-color:#f0f0f0;
+    z-index:333;
+}
+
+.mb_nav.on{
+    left:0;
+}
+
+.mb_nav li a{
+    width:100%;
+    padding:2rem;
+    font-size: 1.2rem;
+    color:black;
+    display: block;
+    border-bottom:1px solid #dadada;
+}
+
+.mb_nav li a:hover{
+    background-color: #dfdfdf;
+}
+
+/* 배너 */
+
+.banner{
+    width:100%;
+    height:38rem;
+    padding:0;
+    background-image: url('../img/mainLine.png');
+    background-size: cover;
+}
+
+.banner .flex{
+    width:70rem;
+    height:38rem;
+    margin:auto;
+    position: relative;
+}
+
+.banner .flex .banner_txt{
+    position: absolute;
+    left:10%; top:15%;
+    line-height: 2.3;
+}
+
+.banner .flex .banner_txt h2{
+    font-size: 3.2rem;
+}
+
+.banner .flex .banner_txt p{
+    font-size: 1.3rem;
+    
+}
+
+.banner .flex .banner_img{
+    position:absolute;
+    right:15%; top:12%;
+}
+
+.banner .flex .banner_img img{
+    height:35rem;
+}
+
+/* about */
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap:5rem;
+}
+
+.about-container img{
+    height:25rem;
+}
+
+.about-container p{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+/* research */
+.research{
+    text-align: center;
+}
+
+.research-container{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    background-color: var(--sub-color);
+    height:15rem;
+}
+
+.research-container .box{
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* 세로 */
+}
+
+.research-container .box img{
+    height:6rem;
+}
+
+/* merit */
+.merit-container{
+    max-width:60rem;
+    min-height: 170vh;
+    margin:auto;
+}
+.merit-container .box h3{
+    padding:7rem 0 0 7rem;
+    font-size:1.5rem;
+    line-height: 1.5;
+}
+
+.merit-container .box span{
+    background-color: var(--main-color);
+    color:white;
+}
+
+.merit-container .box .flex-box{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:3.5rem;
+}
+
+.merit-container .box .flex-box .merit-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.merit-container .box .flex-box .merit-content p{
+    font-size: 1.1rem;
+}
+
+.merit-container .box .flex-box .merit-content span{
+    font-size: 1.4rem;
+    color:var(--main-color);
+    font-weight: bold;
+    background:none;
+}
+
+.merit-container .box .flex-box .merit-content img{
+    width:100%;
+}
+
+/* fixbg */
+.fixbg{
+    width:100%;
+    background-image:url('../img/fix_img.png');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:20rem;
+    position: relative;
+}
+
+.fixbg p{
+    font-size: 1.7rem;
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    line-height: 2;
+}
+
+
+/* select */
+.select{
+    text-align: center;
+    height:100vh;
+}
+.select-container{
+    margin-top:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:6rem;
+    background-color: var(--sub-color);
+    padding:3rem 3rem;
+}
+
+.select-container img{
+    height:20rem;
+}
+
+/* footer */
+#footer{
+    background-color: #424242;
+    color:white;
+    margin-top: 10rem;
+    padding:2rem 5rem;
+}
+
+#footer p{
+    font-size: 1rem;
+    line-height: 2;
+}

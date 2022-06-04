@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burgerking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    
+    <!-- TOP 버튼 -->
+    <a id="topBtn" href="#">TOP</a>
+
+    <!-- header -->
+    <header id="header">
+        <section class="flex">
+            <h1 class="logo"><a href="#"><img src="img/logo.gif" alt="logo"></a></h1>
+            <nav class="nav">
+                <ul class="mainmenu">
+                    <li><a href="#">메뉴소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">스페셜&할인팩</a></li>
+                            <li><a href="#">프리미엄</a></li>
+                            <li><a href="#">와퍼</a></li>
+                            <li><a href="#">주니어&버거</a></li>
+                            <li><a href="#">올데이킹</a></li>
+                            <li><a href="#">치킨버거</a></li>
+                            <li><a href="#">음료&사이드</a></li>
+                            <li><a href="#">독퍼</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">매장소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">이벤트</a>
+                        <ul class="submenu">
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드스토리</a>
+                        <ul class="submenu">
+                            <li><a href="#">BRAND</a></li>
+                            <li><a href="#">WHOPPER</a></li>
+                            <li><a href="#">COMM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <button type="button" class="btn">딜리버리 주문</button>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+    </header>
+
+    <!-- 모바일 메뉴 -->
+    <div class="mb_nav">
+        <ul class="mb_menu">
+            <li>
+                <div class="flex_menu">
+                    <a href="#">메뉴소개</a>
+                    <div class="mb_menu_btn"><a href="#">></a></div>
+                </div>
+                <ul class="mb_subDown">
+                    <li><a href="#">스페셜&할인팩</a></li>
+                    <li><a href="#">프리미엄</a></li>
+                    <li><a href="#">와퍼</a></li>
+                    <li><a href="#">주니어&버거</a></li>
+                    <li><a href="#">올데이킹</a></li>
+                    <li><a href="#">치킨버거</a></li>
+                    <li><a href="#">음료&사이드</a></li>
+                    <li><a href="#">독퍼</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="flex_menu">
+                    <a href="#">매장소개</a>
+                    <a href="#">></a>
+                </div>
+                <ul class="mb_sub">
+                    <li><a href="#">매장찾기</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="flex_menu">
+                    <a href="#">이벤트</a>
+                    <a href="#">></a>
+                </div>
+                <ul class="mb_sub">
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="flex_menu">
+                    <a href="#">브랜드스토리</a>
+                    <a href="#">></a>
+                </div>
+                <ul class="mb_sub">
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">WHOPPER</a></li>
+                    <li><a href="#">COMM</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 배너슬라이드 -->
+    <div class="banner">
+        <div class="slide_wrap">
+            <div class="slide_box">
+                <div class="slide_img">
+                    <img src="img/main_banner1.png" alt="슬라이드1">
+                </div>
+                <div class="slide_txt">
+                    <span>SACKER<br>WHOPPER</span>
+                    <P>2, 3, 4 SET</P>
+                    <P>50% SALE</P>
+                    <button class="btn">더 알아보기</button>
+                </div>
+            </div>
+            <div class="slide_box">
+                <div class="slide_img">
+                    <img src="img/main_banner2.png" alt="슬라이드2">
+                </div>
+                <div class="slide_txt2">
+                    <span>알록달록 팝핑캔디가 입안에서 팡팡!!</span>
+                    <P>POPPING CANDY</P>
+                    <P>알록달록 팝핑캔디가 입안에서 팡팡!!</P>
+                    <button class="btn">더 알아보기</button>
+                </div>
+            </div>
+            <div class="slide_box">
+                <div class="slide_img">
+                    <img src="img/main_banner3.png" alt="슬라이드3">
+                </div>
+                <div class="slide_txt3">
+                    <span>디아블로 얼티밋<br>도넛킹</span>
+                    <P>PACK 1</P>
+                    <P>50% SALE</P>
+                    <button class="btn">더 알아보기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 역사 -->
+    <div class="history">
+        <div class="heading">
+            <img src="img/textimg.png" alt="textimg">
+            <h2>history</h2>
+        </div>
+
+        <div class="his-contents">
+            <img src="img/history.png" alt="역사">
+            <div class="his-txt">
+                <h3>버거킹 KOREA</h3>
+                <p>버거킹은 지난 1984년 종로점을 오픈하며 한국에 진출한 이래,<br>차별화된 제품과 개성 있는 매장 인테리어로<br>지난 38년간 한국 소비자의 사랑을 받아오고 있습니다.<br>
+                    더욱 풍성하고 맛있는 제품과 정성을 다하는 고객 서비스로<br>여러분께 더욱 가까이 다가가도록 하겠습니다.</p>
+            </div>
+        </div>
+
+        <div class="buttonalign">
+            <button class="btn" type="button">더 알아보기</button>
+        </div>
+    </div>
+
+    <!-- 베스트 메뉴 슬라이드 -->
+    <section class="bestmenu">
+        <div class="heading">
+            <img src="img/textimg.png" alt="textimg">
+            <h2>Best Menu</h2>
+        </div>
+
+        <div class="menulist">
+
+            <div class="menu-btn">
+                <span class="prev"><</span>
+                <span class="next">></span>
+            </div>
+
+            <div class="menubox">
+                <img src="img/menu_1.png" alt="불고기 와퍼">
+                <span>불고기 와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_2.png" alt="베이컨치즈 와퍼">
+                <span>베이컨치즈 와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_3.png" alt="스태커4와퍼">
+                <span>스태커4와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_4.png" alt="치즈 와퍼">
+                <span>치즈 와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_5.png" alt="스태커3와퍼">
+                <span>스태커3와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_6.png" alt="와퍼">
+                <span>와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_7.png" alt="갈릭불고기와퍼">
+                <span>갈릭불고기와퍼</span>
+            </div>
+            <div class="menubox">
+                <img src="img/menu_8.png" alt="스태커2와퍼">
+                <span>스태커2와퍼</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 작은 배너 -->
+    <section class="imgbanner">
+        <div class="top-banner">
+            <div class="content">
+                <span>bacon cheese</span>
+                <h3>whopper</h3>
+                <p>with cococola and ring</p>
+                <a href="#" class="btn">주문하기</a>
+            </div>
+        </div>
+        <div class="grid-banner">
+            <div class="grid">
+                <img src="img/banner-1.png" alt="">
+                <div class="content">
+                    <span>STACKER 3 WAPER</span>
+                    <h3>5000원 SALE</h3>
+                    <a href="#" class="btn">주문하기</a>
+                </div>
+            </div>
+            <div class="grid">
+                <img src="img/banner-2.png" alt="">
+                <div class="content center">
+                    <span>SIDE MENU</span>
+                    <h3>UPTO 25% SALE</h3>
+                    <a href="#" class="btn">주문하기</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="footer_contents">
+            <p class="footertxt">BUGER KING</p>
+            <span>서울 종로구 삼봉로 71 G 타워 2층 주식회사 비케이알</span>
+            <span>전화주문 1599-0505</span>
+            <span>사업자 등록번호 101-86-76277</span>
+            <span class="last">(주)BKR 대표이사 문영주</span>
+            <p>Copyright 2019 BKR Co., Ltd. All right Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

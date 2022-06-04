@@ -1,0 +1,165 @@
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-bg {
+    background-image: url('../img/summerbanner.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Scent */
+.Scent {
+    margin-top: 35rem;
+}
+
+.Scent .Scent-container {
+    margin-top: 5rem;
+}
+
+.Scent .Scent-container .SC-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 12rem;
+    position: relative;
+}
+
+.Scent .Scent-container .SC-box:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.SC-txt {
+    padding: 2rem 0.5rem;
+    text-align: center;
+}
+
+.SC-txt h3 {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+}
+
+.SC-txt p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* SMPF */
+.SMPF {
+    min-height: 160rem;
+}
+
+.byredoPF {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.diptyquePF {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    flex-direction: row-reverse;
+}
+
+
+.SMPF_item1 {
+    background-color: aliceblue;
+    padding: 2rem 5rem;
+}
+
+.SMPF_item2 {
+    background-color: #f7f7f8;
+    padding: 2rem 5rem;
+    margin-top: 10rem;
+}
+
+.SMPF_item3 {
+    background-color: #e9ebfb;
+    padding: 2rem 5rem;
+    margin-top: 15rem;
+}
+
+.SMPF h4 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.SMPF p {
+    font-size: 1.8rem;
+}
+
+
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    /* Tablet */
+    html {
+        font-size: 65%;
+    }
+
+    .SC-txt p {
+        padding: 2rem 0.5rem;
+        text-align: center;
+        width: 30rem;
+    }
+
+    .Scent .Scent-container .SC-box img {
+        width: 26rem;
+    }
+
+    /* SMPF */
+    .SMPF_item1,
+    .SMPF_item2,
+    .SMPF_item3 {
+        margin: 0;
+    }
+
+    .byredoPF img,
+    .diptyquePF img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .Scent .Scent-container .SC-box img {
+        width: 20rem;
+    }
+
+    .SC-txt h3 {
+        font-size: 2.5rem;
+    }
+
+    /* SMPF */
+    .SMPF_item1,
+    .SMPF_item2,
+    .SMPF_item3 {
+        margin: 0;
+    }
+
+    .byredoPF img,
+    .diptyquePF img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:480px){ 
+    .byredoPF img,
+    .diptyquePF img {
+        width: 50%;
+    }
+}

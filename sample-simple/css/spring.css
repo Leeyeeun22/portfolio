@@ -1,0 +1,137 @@
+section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.banner-bg{
+    background-image: url('../img/springbanner.png');
+    background-size: cover;
+    position: absolute;
+    top:0;
+    width:100%;
+}
+
+/* SCint */
+.SCint {
+    margin-top: 35rem;
+}
+
+.SCint .SCImg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+    gap:3rem; 
+}
+
+.SCint .SCImg li{
+    text-align: center;
+    position: relative;
+}
+
+.SCint .SCImg span{
+    display: block;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+/* SPPF */
+.SPPF .sp-container{
+    margin-top: 5rem;
+    min-height: 240rem;
+}
+
+.SPPF .sp-container .sp-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:7rem 8rem;
+}
+
+.SPPF .sp-container .sp-box:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.sp-txt h3{
+    font-size: 3.5rem;
+    text-transform:uppercase;
+}
+
+.sp-txt span{
+    display: inline-block;
+    font-size: 3rem;
+    background-color: var(--main-color);
+    color:var(--white);
+    padding:0.2rem;
+    margin-top:1rem;
+}
+
+.sp-txt p{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px){ /* Tablet */
+    html{
+        font-size: 65%;
+    }
+    .SPPF{
+        width:90%;
+    }
+    .sp-txt{
+        text-align: center;
+        padding:5rem 2rem;
+    }
+    .SPPF .sp-container .sp-box img{
+        width:33%;
+    }
+    /* SCint */
+    .SCint .SCImg img{
+        width:25rem;
+    }
+    .SCint .SCImg span{
+        font-size: 2.8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width:767px){
+    html{
+        font-size: 60%;
+    }
+
+    .SCint .SCImg span{
+        font-size: 2.5rem;
+    }
+    .sp-txt {
+        width:40rem;
+    }
+    .SPPF .sp-container .sp-box{
+        padding:0.5rem;
+    }
+
+        /* SCint */
+        .SCint .SCImg img{
+            width:23rem;
+        }
+
+        .SPPF .sp-container .sp-box img{
+            width:30%;
+        }
+        .sp-txt{
+            text-align: center;
+            padding:5rem 2rem;
+        }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .SCint .SCImg li img{
+        width:20rem;
+    }
+}

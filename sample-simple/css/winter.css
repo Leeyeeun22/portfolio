@@ -1,0 +1,152 @@
+section{
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.banner-bg{
+    background-image: url('../img/winterbanner.png');
+    background-size: cover;
+    position: absolute;
+    top:0;
+    width:100%;
+}
+
+/* SCint */
+.SCint {
+    margin-top: 35rem;
+}
+
+.SCint .SCImg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:5rem;
+    gap:5rem; 
+}
+
+.SCint .SCImg li{
+    text-align: center;
+    position: relative;
+}
+
+.SCint .SCImg .SCtxt{
+    display: block;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.SCint .SCImg img{
+    width:20rem;
+}
+
+/* WTPF */
+.WTPF .wt-container{
+    margin-top: 5rem;
+    min-height: 240rem;
+}
+
+.WTPF .wt-container .wt-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:7rem 8rem;
+}
+
+.WTPF .wt-container .wt-box:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.wt-txt h3{
+    font-size: 3.5rem;
+    text-transform:uppercase;
+}
+
+.wt-txt span{
+    display: inline-block;
+    font-size: 3rem;
+    padding:0.2rem;
+    margin-top:1rem;
+}
+
+.wt-txt p{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+/* Line */
+.Line{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    z-index: -1;
+}
+.Linebg{
+    background-image: url('../img/winterLine.png');
+    height:70rem;
+    background-size: cover;
+    width:100%;
+}
+.Linebg2{
+    background-image: url('../img/winterLine2.png');
+    height:70rem;
+    background-size: cover;
+    width:100%;
+}
+.Linebg3{
+    background-image: url('../img/winterLine.png');
+    height:70rem;
+    background-size: cover;
+    width:100%;
+}
+.Linebg4{
+    background-image: url('../img/winterLine2.png');
+    height:70rem;
+    background-size: cover;
+    width:100%;
+}
+
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px){ /* Tablet */
+    .WTPF{
+        width:90%;
+    }
+    .wt-txt{
+        text-align: center;
+        padding:5rem 2rem;
+    }
+    .WTPF .wt-container .wt-box img{
+        width:40%;
+    }
+}
+@media screen and (max-width:767px) { 
+    .SCint .SCImg span{
+        font-size: 2.8rem;
+    }
+    .wt-txt {
+        width:40rem;
+    }
+    .WTPF .wt-container .wt-box{
+        padding:0.5rem;
+    }
+    .WTPF .wt-container .wt-box img{
+        width:32%;
+    }
+    .WTPF{
+        width:90%;
+    }
+    .wt-txt{
+        text-align: center;
+        padding:5rem 2rem;
+    }
+}
+
+@media (max-width:480px){ /* 최대 480 일때 */
+    .SCint .SCImg li img{
+        width:20rem;
+    }
+}

@@ -1,0 +1,818 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    list-style: none;
+}
+
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section:nth-child(-n+4) {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--black);
+    margin-top: 15rem;
+}
+
+/* root */
+:root {
+    --white: #fff;
+    --black: #222;
+    --main-color: #6667ab;
+    --border: 0.1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* header */
+#header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+#header .flex .logo img {
+    height: 3rem;
+}
+
+#header .flex .navbar a {
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: 4rem;
+}
+
+#header .flex .navbar a:hover {
+    border-bottom: 3px solid var(--main-color);
+    font-weight: bold;
+}
+
+#nav-btn {
+    display: none;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+/* banner */
+.banner-bg {
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner {
+    min-height: 44rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.banner .bntext {
+    width: 50rem;
+    text-align: center;
+}
+
+.banner .bntext p {
+    font-size: 3.3rem;
+    color: var(--black);
+    line-height: 2;
+}
+
+.banner .bnimg {
+    position: absolute;
+    right: 8rem;
+    bottom: -5rem;
+}
+
+.banner .bnimg img {
+    width: 30rem;
+}
+
+/* seasons */
+.seasonsAlign {
+    margin-top: 50rem;
+    height: 30rem;
+}
+
+.seasoncircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
+.seasoncircle a {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color: #6667ab;
+    line-height: 11rem;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+/* li의 n번째 a */
+.seasoncircle a:nth-of-type(1) {
+    background: #9a9bc4;
+}
+
+.seasoncircle a:nth-of-type(2) {
+    background: #e3e3e3;
+}
+
+.seasoncircle a:nth-of-type(3) {
+    background: #b5b5c6;
+}
+
+.seasoncircle a:nth-of-type(4) {
+    background: #6667ab;
+}
+
+/* seasonsPF */
+.seasonsPF .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+    max-width: 100%;
+    margin-top: 6rem;
+}
+
+.seasonsPF .box-container .box {
+    height: 40rem;
+    max-width: 100%;
+}
+
+.seasonsPF span {
+    font-size: 3.5rem;
+}
+
+/* seasonPF background Img */
+.seasonsPF .box-container .box:nth-child(1) {
+    background-image: url("../img/springbg.png");
+    position: relative;
+    background-size: cover;
+}
+
+.seasonsPF .box-container .box:nth-child(2) {
+    position: relative;
+    background-size: cover;
+}
+
+.seasonsPF .box-container .box:nth-child(3) {
+    position: relative;
+    background-size: cover;
+}
+
+.seasonsPF .box-container .box:nth-child(4) {
+    background-image: url("../img/winterbg.png");
+    position: relative;
+    background-size: cover;
+}
+
+.SeasonImg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SeasonImg img {
+    width: 16rem;
+}
+
+/* spring */
+.springName {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2.6rem;
+    color: var(--white);
+    padding: 2rem;
+}
+
+.springPF {
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.8rem;
+    writing-mode: vertical-rl;
+    padding: 2rem;
+}
+
+/* summer */
+.summerName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.6rem;
+    color: var(--black);
+    padding: 2rem;
+}
+
+.summerPF {
+    color: var(--black);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 2.8rem;
+    padding: 2rem;
+}
+
+/* fall */
+.fallName {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.6rem;
+    color: var(--black);
+    padding: 2rem;
+    writing-mode: vertical-rl;
+}
+
+.fallPF {
+    color: var(--black);
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    font-size: 2.8rem;
+    writing-mode: vertical-rl;
+    padding: 2rem;
+}
+
+/* winter */
+.winterName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.6rem;
+    color: var(--white);
+    padding: 2rem;
+}
+
+.winterPF {
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.8rem;
+    padding: 2rem;
+}
+
+/* brandAbout */
+.brandAbout {
+    height: 60rem;
+
+}
+
+.LineBg {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(autofit, 50%);
+    grid-template-rows: 18rem 18rem;
+}
+
+.perfumeLine img {
+    width: 18rem;
+}
+
+.perfumeLine:nth-child(1) {
+    position: relative;
+    background-image: url("../img/diptyqueLineBG.png");
+    background-size: cover;
+}
+
+.perfumeLine:nth-child(2) {
+    position: relative;
+}
+
+.pfTxtLine {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+    line-height: 4rem;
+}
+
+.pfImgDy {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+.pfImgBy {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.BrandBtn {
+    text-align: center;
+    margin-top: 12rem;
+}
+
+.LineBtn {
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    width: 13rem;
+    height: 4rem;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    position: relative;
+    letter-spacing: 0.1rem;
+    font-family: normal;
+}
+
+.LineBtn:hover {
+    font-weight: bold;
+}
+
+/* Advantages */
+.Advantages {
+    width: 100%;
+    display: grid;
+    margin-top: 30rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25rem 25rem;
+    position: relative;
+    height: 70rem;
+}
+
+.AdLine:nth-child(1) {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2.5rem;
+    position: relative;
+    line-height: 3.7rem;
+}
+
+.AdLine:nth-child(2) {
+    font-size: 2.5rem;
+    position: relative;
+    line-height: 3.7rem;
+}
+
+.TopText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TopImg {
+    position: absolute;
+    left: 10%;
+    bottom: -1.1rem;
+}
+
+.BtText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.BtImg {
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+.Bigcircle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    width: 9rem;
+    height: 9rem;
+    top: 42%;
+    left: 3%;
+}
+
+.smcircle {
+    border-radius: 50%;
+    background-color: #b5b5c6;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: 60%;
+    left: 8%;
+}
+
+/* perfumeSlide */
+.perfumeSlide {
+    width: 100%;
+    position: relative;
+}
+
+.SlideText {
+    width: 100%;
+    height: 20rem;
+}
+
+.SlideTextSub {
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+
+.PFImgGroup {
+    height: 20rem;
+    box-shadow: var(--box-shadow);
+    line-height: 20rem;
+    position: relative;
+}
+
+.PFSlideGroup {
+    position: absolute;
+    top: -60%;
+    left: 30%;
+    height: 30rem;
+    width: 100%;
+    
+}
+
+.PFimg {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 30rem;
+}
+
+.PFimg>li>a {
+    margin-left: 0;
+    margin-right: 100px;
+    height: 300px;
+}
+
+.PFimg li a img {
+    width: 60%;
+}
+
+.PFimg>li:nth-child(2) a,
+.PFimg>li:nth-child(4) a {
+    margin-top: -30px;
+}
+
+/*FeelImage */
+#FeelImage {
+    margin-top: 30rem;
+    width: 100%;
+    height: 60rem;
+}
+
+.imageCircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 5rem;
+    max-width: 100%;
+}
+
+.imageCircle a {
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    background-color: #6667ab;
+    line-height: 11rem;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+
+/* li의 n번째 a */
+.imageCircle a:nth-of-type(1) {
+    background: #9a9bc4;
+}
+
+.imageCircle a:nth-of-type(2) {
+    background: #e3e3e3;
+    margin-top: 10rem;
+}
+
+.imageCircle a:nth-of-type(3) {
+    background: #b5b5c6;
+    margin-top: 5rem;
+}
+
+.imageCircle a:nth-of-type(4) {
+    background: var(--main-color);
+}
+
+/* footer */
+#footer {
+    background-color: var(--black);
+    color: var(--white);
+    height: 15rem;
+    line-height: 15rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: normal;
+}
+
+
+
+
+
+
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px){ /* Tablet */
+    html {
+        font-size: 65%;
+    }
+
+    .banner .bnimg {
+        display: none;
+    }
+
+    .perfumeLine img {
+        display: none;
+    }
+
+    .AdLine img {
+        display: none;
+    }
+   
+    /* perfumeSlide" */
+    .perfumeSlide {
+        height: 150rem;
+    }
+
+    .SlideTextSub {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 30rem;
+        transform: translate(-50%, 0);
+    }
+
+    .PFImgGroup {
+        margin-top: 50px;
+        box-shadow: none;
+    }
+
+    .PFSlideGroup {
+        width: 100%;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%, 0);
+        margin-top: 15rem;
+    }
+
+    .PFimg {
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .PFimg>li>a {
+        margin: auto;
+    }
+
+    .PFimg li a img {
+        width: 15rem;
+    }
+
+    .PFimg>li:nth-child(2) a,
+    .PFimg>li:nth-child(4) a {
+        margin-top: -0.5rem;
+    }
+
+    /* Advantages */
+    .Advantages {height: 50rem;}
+
+    /* seasons */
+    .seasonsPF .box-container .box:nth-child(3) {
+        background-image: url("../img/fallbg.png");
+        position: relative;
+        background-size: cover;
+    }
+
+    .seasonsPF .box-container .box:nth-child(4) {
+        background-image: none;
+        position: relative;
+        background-size: cover;
+    }
+    
+    .fallName,
+    .fallPF {
+        color: var(--white);
+    }
+
+    .winterName,
+    .winterPF {
+        color: var(--black);
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width:767px) { 
+    html {
+        font-size: 60%;
+    }
+
+    #nav-btn {
+        display: inline-block;
+    }
+
+    /* header */
+  #header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+
+    #header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    #header .flex .navbar a {
+        display: block;
+        margin: 5rem;
+        text-align: center;
+    }
+
+    #header .flex .navbar a:hover {
+        border-bottom: none;
+        color: var(--main-color);
+    }
+
+    .banner .bnimg {
+        display: none;
+    }
+
+    .perfumeLine img {
+        display: none;
+    }
+
+    .AdLine img {
+        display: none;
+    }
+
+    /* seasons */
+    .seasonsAlign {
+        height: 40rem;
+    }
+
+    .seasonsPF .box-container {
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+
+    .seasonsPF .box-container .box:nth-child(3) {
+        background-image: url("../img/fallbg.png");
+        position: relative;
+        background-size: cover;
+    }
+
+    .seasonsPF .box-container .box:nth-child(4) {
+        background-image: none;
+        position: relative;
+        background-size: cover;
+    }
+
+    .fallName,
+    .fallPF {
+        color: var(--white);
+    }
+
+    .winterName,
+    .winterPF {
+        color: var(--black);
+    }
+
+    .BrandBtn {
+        margin-top: 8rem;
+    }
+
+    /* Advantages */
+    .Advantages {
+        height: 50rem;
+    }
+
+    .Bigcircle,
+    .smcircle {
+        display: none;
+    }
+
+    /* perfumeSlide" */
+    /* perfumeSlide" */
+    .perfumeSlide {
+        height: 150rem;
+    }
+
+    .SlideTextSub {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 30rem;
+        transform: translate(-50%, 0);
+    }
+
+    .PFImgGroup {
+        margin-top: 50px;
+        box-shadow: none;
+    }
+
+    .PFSlideGroup {
+        width: 100%;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%, 0);
+        margin-top: 15rem;
+    }
+
+    .Advantages {height: 50rem;}
+
+    .PFimg {
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .PFimg>li>a {
+        margin: auto;
+    }
+
+    .PFimg li a img {
+        width: 15rem;
+    }
+
+    .PFimg>li:nth-child(2) a,
+    .PFimg>li:nth-child(4) a {
+        margin-top: -0.5rem;
+    }
+
+    .imageCircle a:nth-of-type(2) {
+        background: #e3e3e3;
+        margin-top: 0;
+    }
+    
+    .imageCircle a:nth-of-type(3) {
+        background: #b5b5c6;
+        margin-top: 0;
+    }
+
+    /* SeasonImg */
+    .SeasonImg img{
+        width:15rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:480px){ 
+    .PFimg li a img {
+        width: 13rem;
+    }
+    .SeasonImg img{
+        width:13rem;
+    }
+}

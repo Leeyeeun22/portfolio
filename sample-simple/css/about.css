@@ -1,0 +1,99 @@
+section:nth-child(-n+3){
+    padding:3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.banner-bg{
+    background-image: url('../img/aboutbanner.png');
+    background-size: cover;
+    position: absolute;
+    top:0;
+    width:100%;
+}
+
+/* meaning */
+.meaning_contents{
+    margin-top: 50rem;
+}
+
+.meaning .meaning_contents .aboutbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5rem;
+    margin-top: 5rem;
+}
+
+.meaning .aboutbox img{
+    height:38rem;
+}
+.meaning .aboutbox .mntext{
+    font-size: 2.3rem;
+    line-height: 1.8;
+}
+
+/* QNA */
+.QNA{ min-height: 90rem;}
+.QNA p{
+    font-size: 2.5rem;
+    line-height: 1.7;
+    padding:3rem 4rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.QNA .seasonsImg{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 23rem);
+    gap:2rem;
+    align-items: flex-start;
+    justify-content: center;
+    padding:4rem;
+    margin-top: 5rem;
+
+}
+
+.QNA .seasonsImg img{
+    width:100%;
+}
+
+/* media */
+@media screen and (min-width:768px) and (max-width:1023px){ /* Tablet */
+    html{
+        font-size: 55%;
+    }
+    .QNA{
+        min-height: 130rem;
+    }
+    .QNA .seasonsImg{
+        grid-template-columns: repeat(auto-fit, 30rem);
+    }
+
+}
+
+
+@media screen and (max-width:767px) { 
+    .QNA{
+        min-height: 150rem;
+    }
+    .meaning .aboutbox img{
+        height:33rem;
+    }
+    .QNA .seasonsImg img{
+        width:22rem;
+    }
+}
+
+@media screen and (max-width:480px){ 
+    .QNA{
+        min-height: 200rem;
+        
+    }
+    .QNA .seasonsImg img{
+        width:20rem;
+    }
+    .meaning .aboutbox img{
+        height:30rem;
+    }
+}

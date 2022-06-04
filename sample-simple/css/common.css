@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
+/* reset */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    list-style: none;
+}
+
+html{
+    font-size:70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-transform:capitalize;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.heading h2{
+    text-align: center;
+    font-size: 3.5rem;
+    color:var(--black);
+    margin-top:15rem;
+}
+
+:root{
+    --white:#fff;
+    --black:#222;
+    --main-color:#6667ab;
+    --border:0.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* header */
+#header{
+    position: sticky;
+    left:0; top: 0;
+    z-index: 100;
+}
+
+#header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 2rem;
+}
+
+#header .flex .logo img{
+    height:3rem;
+}
+
+#header .flex .navbar a{
+    font-size: 2rem;
+    color:var(--black);
+    margin-left: 4rem;
+}
+
+#header .flex .navbar a:hover{
+    border-bottom: 3px solid var(--main-color);
+    font-weight: bold;
+}
+
+#nav-btn{
+    display: none;
+    font-size: 2.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+/* banner */
+.banner{
+    min-height: 40rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.banner .bntext{
+    width:50rem;
+    text-align: center;
+}
+
+.banner .bntext p{
+    font-size: 3.3rem;
+    color:var(--black);
+    line-height: 2;
+}
+
+
+/* footer */
+#footer{
+    background-color: var(--black);
+    color:var(--white);
+    height:15rem;
+    line-height: 15rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: normal;
+    margin-top:8rem;
+}
+
+
+
+/* media */
+@media (max-width:767px){
+    html{
+        font-size: 60%;
+    }
+    #nav-btn{
+        display: inline-block;
+    }
+
+    /* header */
+    #header .flex .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+     }
+
+     #header .flex .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+     }
+
+     #header .flex .navbar a{
+        display: block;
+        margin:5rem;
+        text-align: center;
+     }
+
+     #header .flex .navbar a:hover{
+        border-bottom:none;
+        color:var(--main-color);
+     }
+}

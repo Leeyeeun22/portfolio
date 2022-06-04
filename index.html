@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>이예은 웹 퍼블리셔 포트폴리오</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+   <!-- header -->
+   <header class="header">
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+      <a href="#home" class="logo">Portfolio</a>
+
+      <nav class="navbar">
+         <a href="#home" class="active">home</a>
+         <a href="#about">about</a>
+         <a href="#skills">skills</a>
+         <a href="#portfolio">portfolio</a>
+      </nav>
+   </header>
+
+   <!-- home -->
+   <section class="home" id="home">
+
+      <div class="image" data-aos="fade-right">
+         <img src="images/myimg.jpg" alt="myimg">
+      </div>
+
+      <div class="content">
+         <h3 data-aos="fade-up">WELCOME TO MY PORTFOLIO</h3>
+         <span data-aos="fade-up">웹 퍼블리셔 이예은입니다.</span>
+      </div>
+
+   </section>
+
+   <!-- about -->
+   <section class="about" id="about">
+
+      <div class="abouts" data-aos="fade-up">
+
+         <h1 class="heading"><span>about</span></h1>
+
+         <div class="box-container">
+
+            <div class="box-container">
+
+               <div class="box">
+                  <img src="images/icon01.png" alt="정보">
+                  <p>결과가 한눈에 보이는 웹 코딩에 관심이 생겼고,<br>
+                     사용자의 편의를 고려하여 반응형과 독창적이고 다양한 디자인시안<br>
+                     정적인 홈페이지에 애니메이션기능을 추가하여 역동적으로 구현하는 것에<br> 흥미를 느껴 웹 퍼블리셔가 되었습니다.
+                  </p>
+               </div>
+
+               <div class="box">
+                  <img src="images/icon02.png" alt="정보">
+                  <p>웹디자인기능사
+                  </p>
+               </div>
+
+               <div class="box">
+                  <img src="images/icon03.png" alt="메일">
+                  <p>a01073746176@gmail.com
+                  </p>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+
+   <!-- skills -->
+   <section class="skills" id="skills" data-aos="fade-up">
+
+      <h1 class="heading"> <span>skills</span> </h1>
+
+      <div class="progress">
+         <div class="bar" data-aos="fade-left">
+            <h3><span>HTML</span> <span>95%</span></h3>
+         </div>
+         <div class="bar" data-aos="fade-right">
+            <h3><span>CSS</span> <span>95%</span></h3>
+         </div>
+         <div class="bar" data-aos="fade-left">
+            <h3><span>JavaScript</span> <span>85%</span></h3>
+         </div>
+         <div class="bar" data-aos="fade-right">
+            <h3><span>PHOTOSHOP</span> <span>80%</span></h3>
+         </div>
+      </div>
+
+      </div>
+   </section>
+
+   <!-- portfolio-->
+   <section class="portfolio" id="portfolio">
+
+      <h1 class="heading" data-aos="fade-up"> <span>portfolio</span> </h1>
+
+      <div class="box-container">
+
+         <div class="box" data-aos="zoom-in">
+            <img src="images/img-1.jpg" alt="">
+            <h3>버거킹(리디자인)</h3>
+            <span>작업기간:2일</span><br>
+            <button class="btn"><a href="burgerking/home.html">view</a></button>
+         </div>
+
+         <div class="box" data-aos="zoom-in">
+            <img src="images/img-2.jpg" alt="">
+            <h3>라보에이치(리디자인)</h3>
+            <span>작업기간:1일</span><br>
+            <button class="btn"><a href="laboH/index.html">view</a></button>
+
+         </div>
+
+         <div class="box" data-aos="zoom-in">
+            <img src="images/img-3.jpg" alt="">
+            <h3>샘플&심플(창작)</h3>
+            <span>작업기간:7일</span><br>
+            <button class="btn"><a href="sample-simple/index.html">view</a></button>
+
+         </div>
+
+      </div>
+   </section>
+
+   <div class="footer">
+      copyrightⓒ 2022. Lee Yeeun All rights reserved.
+   </div>
+
+   <script src="js/script.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+   <script>
+      AOS.init({
+         duration: 800,
+         delay: 300
+      });
+
+   </script>
+</body>
+
+</html>
