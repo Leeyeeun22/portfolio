@@ -13,7 +13,6 @@
    margin:0; padding:0;
    box-sizing: border-box;
    text-decoration: none;
-   color:var(--black);
 }
 
 /* scrollbar */
@@ -43,6 +42,10 @@ body{
 
 body.active{
    padding-left: 35rem;
+}
+
+a{
+   color:var(--black);
 }
 
 section{
@@ -209,16 +212,42 @@ section{
 }
 
 /* skills */
-.skills{
-   min-height: 80vh;
-   margin:0 auto;
+.skills .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:1.5rem;
+   align-items: center;
+   margin-bottom: 5rem;
+   
+}
+.skills .box-container .box{
+   padding:3rem 1rem;
+   border:2px solid black;
+   height:40rem;
+   color:black;
 }
 
-/* .skills .box-container{
-   
+.skills .box-container .box:hover{
+   color:white;
+   background-color: black;
+}
 
-} */
+.skills .box-container .box img{
+   height:15rem;
+}
 
+.skills .box-container .box h3{
+   margin:1rem 0;
+   font-size: 2rem;
+   padding:1rem;
+   background-color: var(--main-color);
+
+}
+
+.skills .box-container .box p{
+   line-height: 2;
+   font-size: 1.7rem;
+}
 
 
 /* portfolio */
@@ -247,6 +276,12 @@ section{
 
 .portfolio .box-container .box span{
    font-size: 1.7rem;
+}
+
+.portfolio .box-container .box p{
+   font-size: 1.8rem;
+   background-color: var(--main-color);
+   color:white;
 }
 
 .portfolio .box-container:hover .box{
