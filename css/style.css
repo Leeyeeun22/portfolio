@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-   --main-color:#6667ab;
+   --main-color:#70a3e1;
    --black:black;
    --white:white;
    --border-bold:.5rem solid var(--black);
@@ -74,7 +74,7 @@ section{
 .btn a{
    width:100%;
    display: inline-block;
-   padding:1rem 2rem;
+   padding:.7rem 2rem;
 }
 
 .btn a:hover{
@@ -263,15 +263,14 @@ section{
    margin-top:10rem;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-   gap:1.5rem;
+   gap:2rem;
    align-items: flex-start;
 }
 
 .portfolio .box-container .box img{
    height: 30rem;
    width: 100%;
-   object-fit: cover;
-   border:var(--border-light);
+   /* object-fit: cover; */
 }
 
 .portfolio .box-container .box h3{
