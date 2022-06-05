@@ -2,10 +2,8 @@
 
 :root{
    --main-color:#70a3e1;
-   --black:black;
-   --white:white;
-   --border-bold:.5rem solid var(--black);
-   --border-light:.2rem solid var(--black);
+   --border-bold:.5rem solid black;
+   --border-light:.2rem solid black;
 }
 
 *{
@@ -40,23 +38,24 @@ body{
    transition: .2s linear !important;
 }
 
+/* 사이드메뉴 */
 body.active{
    padding-left: 35rem;
 }
 
 a{
-   color:var(--black);
+   color:black;
 }
 
 section{
+   max-width: 1200px;
    padding:3rem 2rem;
    margin: 0 auto;
-   max-width: 1200px;
    text-align: center;
 }
 
 .heading{
-   margin-bottom: 3rem;
+   margin-bottom: 7rem;
    text-align: center;
 }
 
@@ -66,7 +65,7 @@ section{
    border-bottom: var(--border-bold);
 }
 
-/* btn */
+/* 버튼 */
 .btn{
    margin-top: 2rem;
    border:var(--border-light);
@@ -82,17 +81,17 @@ section{
 
 .btn a:hover{
    background-color: var(--main-color);
-   color:var(--white);
+   color:white;
 }
 
 /* header */
 .header{
    position: fixed;
    top:0; left:-35rem;
-   height: 100vh;
-   background-color: var(--white);
-   border-right: var(--border-bold);
    width: 35rem;
+   height: 100vh;
+   background-color:white;
+   border-right: var(--border-bold);
    padding:3rem 2rem;
    text-align: center; 
    display: flex;
@@ -100,7 +99,6 @@ section{
    justify-content: space-between;
    flex-flow: column;
    transition: .2s linear !important;
-   text-align: center;
    z-index: 1000;
 }
 
@@ -137,8 +135,8 @@ section{
    width: 5rem;
    font-size: 2.5rem;
    cursor: pointer;
-   background-color: var(--black);
-   color:var(--white);
+   background-color: black;
+   color:white;
 }
 
 .header.active{
@@ -180,12 +178,12 @@ section{
    background-color: var(--main-color);
    font-size: 2.5rem;
    margin:1rem 0;
-   color:var(--white);
+   color:white;
 }
 
 /* about */
 .about{
-   min-height: 90vh;
+   min-height: 80vh;
 }
 
 .about .box-container{
@@ -208,7 +206,7 @@ section{
 .about .box-container p{
    font-size: 1.8rem;
    margin-top:2rem;
-   line-height: 1.3;
+   line-height: 1.5;
 }
 
 /* skills */
@@ -241,7 +239,6 @@ section{
    font-size: 2rem;
    padding:1rem;
    background-color: var(--main-color);
-
 }
 
 .skills .box-container .box p{
@@ -265,7 +262,6 @@ section{
 .portfolio .box-container .box img{
    height: 30rem;
    width: 100%;
-   /* object-fit: cover; */
 }
 
 .portfolio .box-container .box h3{
@@ -295,21 +291,17 @@ section{
 /* footer */
 .footer{
    text-align: center;
-   background-color: var(--black);
+   background-color: black;
    padding:3rem;
    font-size: 1.4rem;
-   color:var(--white);
+   color:white;
    margin-top:10rem;
 }
-
-
-
 
 
 /* media queries  */
 
 @media (max-width:991px){
-
    html{
       font-size: 55%;
    }
@@ -317,11 +309,9 @@ section{
    body.active{
       padding-left: 0;
    }
-
 }
 
 @media (max-width:450px){
-
    html{
       font-size: 50%;
    }

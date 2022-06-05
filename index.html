@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>이예은 웹 퍼블리셔 포트폴리오</title>
+   <title>이예은 | 웹 퍼블리셔 포트폴리오</title>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
-<body>
-   <!-- header -->
-   <header class="header">
 
+<body>
+   <!-- header(사이드메뉴) -->
+   <header class="header">
+      <!-- 토글버튼 -->
       <div id="menu-btn" class="fas fa-bars"></div>
 
       <a href="#home" class="logo">Portfolio</a>
@@ -26,6 +27,7 @@
          <a href="#skills">skills</a>
          <a href="#portfolio">portfolio</a>
       </nav>
+
    </header>
 
    <!-- home -->
@@ -43,38 +45,31 @@
    </section>
 
    <!-- about -->
-   <section class="about" id="about">
+   <section class="about" id="about" data-aos="fade-up">
 
-      <div class="abouts" data-aos="fade-up">
+      <h1 class="heading"><span>about</span></h1>
 
-         <h1 class="heading"><span>about</span></h1>
+      <div class="box-container">
 
-         <div class="box-container">
-
-            <div class="box-container">
-
-               <div class="box">
-                  <img src="images/icon01.png" alt="정보">
-                  <p>결과가 한눈에 보이는 웹 코딩에 관심이 생겼고,<br>
-                     사용자의 편의를 고려하여 반응형과 독창적이고 다양한 디자인시안<br>
-                     정적인 홈페이지에 애니메이션기능을 추가하여 역동적으로 구현하는 것에<br> 흥미를 느껴 웹 퍼블리셔가 되었습니다.
-                  </p>
-               </div>
-
-               <div class="box">
-                  <img src="images/icon02.png" alt="정보">
-                  <p>웹디자인기능사
-                  </p>
-               </div>
-
-               <div class="box">
-                  <img src="images/icon03.png" alt="메일">
-                  <p>a01073746176@gmail.com
-                  </p>
-               </div>
-            </div>
+         <div class="box">
+            <img src="images/icon01.png" alt="정보">
+            <p>결과가 한눈에 보이는 웹 코딩에 관심이 생겼고,<br>
+               사용자의 편의를 고려하여 반응형과 독창적이고 다양한 디자인시안<br>
+               정적인 홈페이지에 애니메이션기능을 추가하여 역동적으로 구현하는 것에<br> 흥미를 느껴 웹 퍼블리셔가 되었습니다.
+            </p>
          </div>
 
+         <div class="box">
+            <img src="images/icon02.png" alt="정보">
+            <p>웹디자인기능사
+            </p>
+         </div>
+
+         <div class="box">
+            <img src="images/icon03.png" alt="메일">
+            <p>a01073746176@gmail.com
+            </p>
+         </div>
       </div>
    </section>
 
@@ -89,14 +84,14 @@
             <img src="images/html_icon.png" alt="html_icon">
             <h3>html</h3>
             <p>웹 표준과 웹 접근성을 준수하는 구조 설계로<br>
-            시맨틱 마크업을 통한 의미있는 구조를 설계합니다.</p>
+               시맨틱 마크업을 통한 의미있는 구조를 설계합니다.</p>
          </div>
 
          <div class="box">
             <img src="images/css_icon.png" alt="css">
             <h3>css3</h3>
             <p>구조와 속성의 이해와 크로스브라우징을 고려합니다.<br>
-            애니메이션 및 반응형 웹사이트를 구축합니다.</p>
+               애니메이션 및 반응형 웹사이트를 구축합니다.</p>
          </div>
 
          <div class="box">
@@ -111,7 +106,7 @@
             <img src="images/psd_icon.png" alt="psd_icon">
             <h3>photoshop</h3>
             <p>포토샵을 사용하여 원하는 디자인을 제작할 수 있습니다.<br>
-            웹디자인시안을 구성하여 사용자에게 편리한 디자인을 고려합니다.</p>
+               웹디자인시안을 구성하여 사용자에게 편리한 디자인을 고려합니다.</p>
          </div>
 
          <div class="box">
@@ -119,7 +114,7 @@
             <h3>document</h3>
             <p>실무 경험을 통해 파워포인트, 워드, 엑셀 등<br>
                다양한 문서 프로그램을 다룰 수 있으며<br>
-            효율적인 문서작성이 가능합니다.
+               효율적인 문서작성이 가능합니다.
             </p>
          </div>
 
@@ -127,7 +122,7 @@
             <img src="images/git_icon.png" alt="git_icon">
             <h3>git/github</h3>
             <p>git 및 github를 통해 여러 사람과 협업이 가능합니다.<br>
-            commit 및 pull & push를 통해 작업내역을 저장할 수 있습니다.</p>
+               commit 및 pull & push를 통해 작업내역을 저장할 수 있습니다.</p>
          </div>
       </div>
 
@@ -173,11 +168,10 @@
 
          </div>
 
-
-
       </div>
    </section>
 
+   <!-- footer -->
    <div class="footer">
       copyrightⓒ 2022. Lee Yeeun All rights reserved.
    </div>
