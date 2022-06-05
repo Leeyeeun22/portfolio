@@ -214,45 +214,11 @@ section{
    margin:0 auto;
 }
 
-.skills .progress{
-   margin-top: 1rem;
-}
+/* .skills .box-container{
+   
 
-.skills .progress .bar{
-   margin:1rem auto;
-   max-width: 70rem;
-   border:var(--border-bold);
-   padding:1rem;
-}
+} */
 
-.skills .progress .bar h3{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   font-size: 2rem;
-   padding:1rem 2rem;
-   background-color: var(--main-color);
-}
-
- .skills .progress .bar span{
-   font-weight: normal;
-}
-
-.skills .progress .bar:nth-child(1) h3{
-   width: 95%;
-}
-
-.skills .progress .bar:nth-child(2) h3{
-   width: 95%;
-}
-
-.skills .progress .bar:nth-child(3) h3{
-   width: 85%;
-}
-
-.skills .progress .bar:nth-child(4) h3{
-   width: 80%;
-}
 
 
 /* portfolio */
