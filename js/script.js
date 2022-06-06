@@ -1,4 +1,4 @@
-let menu = document.querySelector('#menu-btn');
+let menu = document.querySelector('#menu-btn'); // 모바일메뉴버튼
 let header = document.querySelector('.header');
 
 menu.onclick = () =>{
