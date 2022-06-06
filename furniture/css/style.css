@@ -1,0 +1,104 @@
+/* reset */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --main-color:#f4f1ec;
+    --sub-color:#9a8d78;
+}
+
+html{
+    overflow-x: hidden;
+    letter-spacing: -1px;
+}
+
+.inner{
+    max-width: 1200px;
+    padding:2rem 3rem;
+    margin: 0 auto;
+}
+
+/* 버튼 */
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* header */
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    z-index: 99;
+}
+
+#header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .logo a{
+    font-size: 2rem;
+    color:white;
+}
+
+/* nav */
+.nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    text-transform: capitalize;
+}
+
+.nav li a {
+    width: 100%;
+    font-size: 1.1rem;
+    color:white;
+}
+
+.nav li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    /* 애니메이션 적용 */
+    height: 0.1rem;
+    background-color: var(--sub-color);
+    transition: width .5s;
+    /* 애니메이션 */
+}
+
+.nav li a:hover::after {
+    width: 100%;
+    /* 애니메이션 적용 */
+}
+
+.nav li a:hover {
+    color: var(--sub-color);
+}
+
+
+/* mainbanner */
+.mainbanner{
+    max-width:100%;
+    height:70rem;
+    position: relative;
+}
+
+.mainbanner img{
+    width:100%;
+    object-fit: cover;
+}
+
+.mainbanner .mainbanner_container{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate();
+}
