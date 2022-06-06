@@ -7,8 +7,8 @@
 }
 
 :root{
-    --main-color:#f4f1ec;
-    --sub-color:#9a8d78;
+    --main-color:#9a8d78;
+    --sub-color:#f4f1ec; 
 }
 
 html{
@@ -24,12 +24,13 @@ html{
 
 .heading{
     font-size: 1.4rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
     text-transform: capitalize;
+    padding-left:5rem;
 }
 
 .heading span{
-    color:var(--sub-color);
+    color:var(--main-color);
     font-size: 1.1rem;
     text-transform:none;
 }
@@ -54,8 +55,24 @@ html{
 .btn:hover{
     cursor: pointer;
     background-color: white;
-    color:var(--sub-color);
+    color:var(--main-color);
 }
+
+.con_btn{
+    color:var(--main-color);
+    border:1px solid var(--main-color);
+    font-size: 1.3rem;
+    padding:.4rem 1rem;
+    width:8rem;
+    text-align: center;
+    margin:3rem auto;
+}
+.con_btn:hover{
+    cursor: pointer;
+    background-color: var(--main-color);
+    color:white;
+}
+
 /* header */
 #header{
     position: fixed;
@@ -97,7 +114,7 @@ html{
     width: 0;
     /* 애니메이션 적용 */
     height: 0.1rem;
-    background-color: var(--sub-color);
+    background-color: var(--main-color);
     transition: width .5s;
     /* 애니메이션 */
 }
@@ -108,7 +125,7 @@ html{
 }
 
 .nav li a:hover {
-    color: var(--sub-color);
+    color: var(--main-color);
 }
 
 /* banner */
@@ -137,5 +154,38 @@ html{
 
 /* best */
 .tab_menu{
-    display: block;
+    margin-top: 2rem;
+}
+
+.tab_menu .tabnav{
+    font-size: 0;
+    text-align: right;
+    padding-right:5rem;
+}
+.tab_menu .tabnav li{
+    display: inline-block;
+}
+
+.tab_menu .tabnav li a{
+    font-size: 1.3rem;
+    text-align: center;
+    padding:.5rem 1.3rem;
+    color:black;
+}
+
+.tab_menu .tabnav li a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+.tabcontent{
+    margin-top: 3rem;
+}
+
+.tabcontent #tab01, .tabcontent #tab02{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
