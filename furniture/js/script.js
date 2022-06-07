@@ -7,3 +7,16 @@ $(function(){
       return false;
     }).filter(':eq(0)').click();
     });
+
+
+    var con_wt = -1 * $('.new_container').width();
+    
+function prev_btn(){
+    $('.new_container').css({marginLeft:0}); 
+}
+
+function next_btn(){
+ 
+    $('.new_container').css({marginLeft:con_wt+"px"});
+
+}
