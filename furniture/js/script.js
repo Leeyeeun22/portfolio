@@ -29,5 +29,5 @@ function next_btn(){
     }else{
         con_wt = -1100;
     }
-
+    $('.new_container').css({marginLeft:con_wt+"px"}); 
 }
