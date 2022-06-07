@@ -6,17 +6,28 @@ $(function(){
       $(this).addClass('active');
       return false;
     }).filter(':eq(0)').click();
-    });
+});
 
 
-    var con_wt = -1 * $('.new_container').width();
-    
+var con_wt = -1 * $('.new_container').width();
+var widthSize = $(window).width();
+
 function prev_btn(){
-    $('.new_container').css({marginLeft:0}); 
+    con_wt = 0;
+    $('.new_container').css({marginLeft:con_wt+"px"}); 
 }
 
 function next_btn(){
- 
-    $('.new_container').css({marginLeft:con_wt+"px"});
+
+    if(widthSize < 768 || widthSize <= 480){
+        if(con_wt > -1010){
+            con_wt += -130;
+         }
+        else if(con_wt == 0){
+            con_wt += -130;
+        }
+    }else{
+        con_wt = -1100;
+    }
 
 }

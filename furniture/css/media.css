@@ -1,0 +1,76 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    html{
+        font-size: 85%;
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+
+    html{
+        font-size: 80%;
+    }
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .banner .banner_txt{
+        padding:0 2rem;
+    }
+
+    .tabcontent img{
+        width:20rem;
+    }
+
+    .about-container .box img{
+       height:30rem;
+    }
+
+    .grid-banner{
+        display: flex;
+        flex-wrap: wrap;
+        height:100%;
+    }
+
+    .grid img{
+        height:20rem;
+    }
+
+    .new_container{
+        position: relative;
+    }
+
+    .new_container img{
+        width:15rem;
+    }
+
+    .new_product {
+        overflow: hidden;
+        height: 45rem;
+    }
+
+    .slide_btn{
+        position: absolute;
+        bottom:10%; left:50%;
+        transform: translateX(-50%);
+        padding:0;
+    }
+
+}
+
+
+@media screen and (max-width:480px){
+    html{
+        font-size: 75%;
+    }
+
+    .grid img{
+        height:15rem;
+    }
+}

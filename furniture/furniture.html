@@ -10,6 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
@@ -24,7 +25,7 @@
 
             <nav class="nav">
                 <ul>
-                    <li ><a  href="#home">home</a></li>
+                    <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="#shop">shop</a></li>
                     <li><a href="#notice">notice</a></li>
@@ -32,43 +33,57 @@
 
             </nav>
 
-            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="menu-btn" class="fas fa-bars" onclick="mb_btn_on()"></div>
         </div>
     </header>
 
+    <!-- mobile menu -->
+    <div class="mb_menu">
+        <div id="mb_menu-btn" class="fas fa-times" onclick="mb_btn()"></div>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#notice">notice</a></li>
+        </ul>
+    </div>
+
     <!-- banner -->
     <section class="banner">
-            <div class="banner_txt">
-                <h2>furniture</h2>
-                <p>심플하면서 고급스러운 인테리어로 내부 공간을 디자인해보세요.</p>
-                <div class="btn">the more</div>
-            </div>
+        <div class="banner_txt">
+            <h2>furniture</h2>
+            <p>심플하면서 고급스러운 인테리어로 내부 공간을 디자인해보세요.</p>
+            <div class="btn">the more</div>
+        </div>
     </section>
 
     <!-- best -->
     <section class="best inner">
-        <div class="heading"><span>furniture</span><h2>best product</h2></div>
+        <div class="heading"><span>furniture</span>
+            <h2>best product</h2>
+        </div>
 
         <div class="tab_menu">
             <ul class="tabnav">
-              <li><a href="#tab01">interior</a></li>
-              <li><a href="#tab02">furniture</a></li>
+                <li><a href="#tab01">interior</a></li>
+                <li><a href="#tab02">furniture</a></li>
             </ul>
             <div class="tabcontent">
-              <div id="tab01">
-                  <img src="img/int_1.png" alt="액자">
-                  <img src="img/int_2.png" alt="화분">
-                  <img src="img/int_3.png" alt="디퓨저">
-              </div>
-              <div id="tab02">
-                <img src="img/fur_1.png" alt="흔들의자">
-                <img src="img/fur_2.png" alt="소파">
-                <img src="img/fur_3.png" alt="원목의자">            
-            </div>            
-        </div>
+                <div id="tab01">
+                    <img src="img/int_1.png" alt="액자">
+                    <img src="img/int_2.png" alt="화분">
+                    <img src="img/int_3.png" alt="디퓨저">
+                </div>
+                <div id="tab02">
+                    <img src="img/fur_1.png" alt="흔들의자">
+                    <img src="img/fur_2.png" alt="소파">
+                    <img src="img/fur_3.png" alt="원목의자">
+                </div>
+            </div>
 
-        <div class="con_btn">the more</div>
-          </div><!--tab-->
+            <div class="con_btn">the more</div>
+        </div>
+        <!--tab-->
     </section>
 
     <!-- about -->
@@ -80,8 +95,8 @@
                 <img src="img/aboutimg_1.png" alt="소개사진1">
                 <div class="about_txt">
                     <h3>simple and artistic furniture</h3>
-                    <p><b>furniture</b>만의 깔끔하면서 우아한 분위기를 느껴보세요.<br/>
-                        심플하면서 인기 많은 백색 바탕에 따뜻한 베이지 컬러를<br/>한방울 떨어뜨려 우아한 색감이 특징입니다.<br/>나만의 공간을 더욱 더 아름답게 만들어주는 가구입니다. 
+                    <p><b>furniture</b>만의 깔끔하면서 우아한 분위기를 느껴보세요.<br />
+                        심플하면서 인기 많은 백색 바탕에 따뜻한 베이지 컬러를<br />한방울 떨어뜨려 우아한 색감이 특징입니다.<br />나만의 공간을 더욱 더 아름답게 만들어주는 가구입니다.
                     </p>
                 </div>
             </div>
@@ -90,10 +105,10 @@
                 <img src="img/aboutimg_2.png" alt="소개사진2">
                 <div class="about_txt">
                     <h3>warm atmosphere interior</h3>
-                    <p>너무 튀지 않는 따뜻한 색감의 컬러를 넣어<br/>
-                    안정적이고 편안한 분위기를 만들어줍니다.<br/>
-                    실내공간을 더욱 더 매력적이게 만들어주는<br/>
-                   인테리어 소품을 지금 한번 만나보세요.</p>
+                    <p>너무 튀지 않는 따뜻한 색감의 컬러를 넣어<br />
+                        안정적이고 편안한 분위기를 만들어줍니다.<br />
+                        실내공간을 더욱 더 매력적이게 만들어주는<br />
+                        인테리어 소품을 지금 한번 만나보세요.</p>
                 </div>
             </div>
         </div>
@@ -102,8 +117,9 @@
     <!-- product_banner -->
     <section class="product_banner inner">
 
-        <div class="heading"><span>furniture</span><h2>all product</h2></div>
-
+        <div class="heading"><span>furniture</span>
+            <h2>all product</h2>
+        </div>
 
         <div class="grid-banner">
             <div class="grid">
@@ -142,34 +158,23 @@
 
     <!-- slide item -->
     <section class="new_product inner">
-        <div class="heading"><span>furniture</span><h2>new product</h2></div>
+        <div class="heading"><span>furniture</span>
+            <h2>new product</h2>
+        </div>
 
         <div class="slide_btn">
             <span class="prev" onclick="prev_btn()"><</span>
-            <span class="next" onclick="next_btn()">></span>         
+            <span class="next" onclick="next_btn()">></span>
         </div>
 
-
         <div class="new_container">
-                
-                <div class="box">
-                    <img src="img/new_img1.png" alt="신규가구1">
-                </div>
-                <div class="box">
-                    <img src="img/new_img2.png" alt="신규가구2">
-                </div>
-                <div class="box">
-                    <img src="img/new_img3.png" alt="신규가구3">
-                </div>
-                <div class="box">
-                    <img src="img/new_img4.png" alt="신규가구4">
-                </div>
-                <div class="box">
-                    <img src="img/new_img5.png" alt="신규가구5">
-                </div>
-                <div class="box">
-                    <img src="img/new_img6.png" alt="신규가구6">
-                </div>
+
+            <img src="img/new_img1.png" alt="신규가구1">
+            <img src="img/new_img2.png" alt="신규가구2">
+            <img src="img/new_img3.png" alt="신규가구3">
+            <img src="img/new_img4.png" alt="신규가구4">
+            <img src="img/new_img5.png" alt="신규가구5">
+            <img src="img/new_img6.png" alt="신규가구6">
         </div>
 
     </section>
@@ -180,10 +185,11 @@
         <div class="footer_container inner">
             <p>copyrightⓒ 2022. Lee Yeeun All rights reserved.</p>
         </div>
-        
+
     </footer>
 
     <script src="js/header.js"></script>
 
 </body>
+
 </html>

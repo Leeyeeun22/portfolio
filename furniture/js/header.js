@@ -1,10 +1,10 @@
 // 변수
 let header = document.getElementById('header');
-let navbtn = document.getElementById('nav-btn');
+let navbtn = document.getElementById('mb_menu-btn');
 let navbar = document.querySelector('#header .flex .nav');
 let navbar_txt = document.querySelector('#header .flex .nav ul');
 let logo_txt = document.querySelector('#header .flex .logo a');
-
+let mb_menu = document.querySelector('.mb_menu');
 
 // 스크롤 다운 시 header 색상 변경 
 window.onscroll = () => {
@@ -24,15 +24,15 @@ window.onscroll = () => {
 
         }
     
-
-    // navbtn.classList.remove('fa-times');
-    // navbar.classList.remove('active');
 }
 
 // 메뉴 버튼 클릭 시 navbar down 
-// navbtn.onclick = () => {
-//     navbtn.classList.toggle('fa-times');
-//     navbar.classList.toggle('active');
-// }
+function mb_btn_on(){
+    mb_menu.classList.toggle('active');
+}
 
+// 버튼 클릭시 모바일 메뉴 창닫기
+function mb_btn(){
+    mb_menu.classList.remove('active');
+}
 
