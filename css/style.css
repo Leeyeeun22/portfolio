@@ -117,7 +117,7 @@
     flex-wrap: wrap;
     gap:2rem;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.068);
+    /* background-color: rgba(255, 255, 255, 0.068); */
 }
 
 .skills-container .box{
@@ -246,10 +246,30 @@
     position: relative;
 }
 
+.flex_box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+    border-radius: 10%/45%;
+    background-color: #fff;
+    padding:5rem 6rem;
+    gap:2rem;
+} 
+
 .portfolio_txt{
     flex:1 1 40rem;
     line-height: 2.2;
     font-size: 1.1rem;
+}
+
+.portfolio_img{
+    flex:1 1 30rem;
+    text-align: center;
+}
+
+.portfolio_img img{
+    width:90%;
 }
 
 .portfolio_txt h3{
@@ -277,92 +297,6 @@
 .portfolio_txt .btn a:hover{
     background-color: var(--main-color);
     color:var(--sub-color);
-}
-
-.portfolio_img{
-    flex:1 1 30rem;
-    animation: fade 1.5s;
-}
-
-@keyframes fade{
-    from{
-        opacity: 0.4;
-        transform: scale(0.9);
-    }
-    to{
-        opacity: 1;
-
-    }
-}
-
-.portfolio_img img{
-    width:100%;
-}
-
-.conbox{
-display: none;
-}
-
-.flex_box{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:3rem;
-    padding:4rem;
-    margin-top: 7rem;
-    border-radius: 10%/45%;
-    background-color: #fff;
-}
-
-input[type="radio"]{
-    display: none;
-}
-
-.port_number{
-    padding:10px;
-    text-align: center;
-}
-
-label[for *="tab"]{
-    display: inline-block;
-    padding:10px;
-    background-color: #ccc;
-    cursor: pointer;
-    margin:5px;
-    border-radius: 100%;
-}
-
-input[id="tab01"]:checked ~ .con1 {
-    display: block;
-}
-input[id="tab02"]:checked ~ .con2 {
-    display: block;
-}
-input[id="tab03"]:checked ~ .con3 {
-    display: block;
-}
-input[id="tab04"]:checked ~ .con4 {
-    display: block;
-}
-input[id="tab05"]:checked ~ .con5 {
-    display: block;
-}
-
-/* 탭버튼 클릭 시 색깔 변하게 */
-input[id="tab01"]:checked ~ .port_number > label[for="tab01"]{
-    background-color: var(--sub-color);
-}
-input[id="tab02"]:checked ~ .port_number > label[for="tab02"]{
-    background-color: var(--sub-color);
-}
-input[id="tab03"]:checked ~ .port_number > label[for="tab03"]{
-    background-color: var(--sub-color);
-}
-input[id="tab04"]:checked ~ .port_number > label[for="tab04"]{
-    background-color: var(--sub-color);
-}
-input[id="tab05"]:checked ~ .port_number > label[for="tab05"]{
-    background-color: var(--sub-color);
 }
 
 /* about */
@@ -408,3 +342,36 @@ input[id="tab05"]:checked ~ .port_number > label[for="tab05"]{
     margin-top:2rem;
     line-height: 2;
  }
+
+
+ /* swiper */
+ /* .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
