@@ -1,0 +1,54 @@
+@media screen and (min-width:768px) and (max-width:1023px) {
+    html{
+        font-size: 80%;
+    }
+
+    .heading{
+        top:3%;
+    }
+
+    .section{
+        min-height: 110vh;
+    }
+    .skills-container .box{
+        width:20rem;
+    }
+    .portfolio_img img{
+        width:70%;
+    }
+    #portfolio{
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width:767px) {
+    html{
+        font-size: 80%;
+    }
+
+    .heading{
+        top:0;
+    }
+
+    .section{
+        min-height: 110vh;
+    }
+
+    .mouseicon{
+        display: none;
+    }
+
+    .portfolio_txt{
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width:480px) { /* mobile */
+    html{
+        font-size: 70%;
+    }
+}

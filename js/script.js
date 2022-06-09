@@ -1,33 +1,10 @@
-let menu = document.querySelector('#menu-btn'); // 모바일메뉴버튼
-let header = document.querySelector('.header');
+new fullpage('#full-page',{
+    // licenseKey: '',
+    // sectionsColor: ['#ff0000','#00ff00','#0000ff','#aaaaaa'],
+    navigation: true,
+    responsiveWidth: 1023, // 너비가 1023일때 수동 원페이지 -> 스크롤
+    // scrollingSpeed: 500,
+    // scrollBar: true,
+    navigationTooltips:['home','skills','portfolio','about'],
+});
 
-menu.onclick = () =>{
-   menu.classList.toggle('fa-times');
-   header.classList.toggle('active');
-   document.body.classList.toggle('active');
-}
-
-window.onscroll = () =>{
-   if(window.innerWidth < 991){
-      menu.classList.remove('fa-times');
-      header.classList.remove('active');
-      document.body.classList.remove('active');
-   }
-
-   document.querySelectorAll('section').forEach(sec =>{
-
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 150;
-      let height = sec.offsetHeight;
-      let id = sec.getAttribute('id');
-
-      if(top >= offset && top < offset + height){
-         document.querySelectorAll('.header .navbar a').forEach(links =>{
-            links.classList.remove('active');
-            document.querySelector('.header .navbar a[href*='+ id +']').classList.add('active');
-         });
-      };
-
-   });
-
-}
