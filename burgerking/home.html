@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.css" />
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
 </head>
 
 <body>
-    
+
     <!-- TOP 버튼 -->
     <a id="topBtn" href="#">TOP</a>
 
@@ -113,43 +118,46 @@
     </div>
 
     <!-- 배너슬라이드 -->
-    <div class="banner">
-        <div class="slide_wrap">
-            <div class="slide_box">
-                <div class="slide_img">
-                    <img src="img/main_banner1.png" alt="슬라이드1">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide_img">
+                        <img src="img/main_banner1.png" alt="슬라이드1">
+                    </div>
+                    <div class="slide_txt">
+                        <span>SACKER<br>WHOPPER</span>
+                        <P>2, 3, 4 SET</P>
+                        <P>50% SALE</P>
+                        <button class="btn">더 알아보기</button>
+                    </div>
                 </div>
-                <div class="slide_txt">
-                    <span>SACKER<br>WHOPPER</span>
-                    <P>2, 3, 4 SET</P>
-                    <P>50% SALE</P>
-                    <button class="btn">더 알아보기</button>
+                <div class="swiper-slide">
+                    <div class="slide_img">
+                        <img src="img/main_banner2.png" alt="슬라이드2">
+                    </div>
+                    <div class="slide_txt2">
+                        <span>알록달록 팝핑캔디가 입안에서 팡팡!!</span>
+                        <P>POPPING CANDY</P>
+                        <P>알록달록 팝핑캔디가 입안에서 팡팡!!</P>
+                        <button class="btn">더 알아보기</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_img">
+                        <img src="img/main_banner3.png" alt="슬라이드3">
+                    </div>
+                    <div class="slide_txt3">
+                        <span>디아블로 얼티밋<br>도넛킹</span>
+                        <P>PACK 1</P>
+                        <P>50% SALE</P>
+                        <button class="btn">더 알아보기</button>
+                    </div>
                 </div>
             </div>
-            <div class="slide_box">
-                <div class="slide_img">
-                    <img src="img/main_banner2.png" alt="슬라이드2">
-                </div>
-                <div class="slide_txt2">
-                    <span>알록달록 팝핑캔디가 입안에서 팡팡!!</span>
-                    <P>POPPING CANDY</P>
-                    <P>알록달록 팝핑캔디가 입안에서 팡팡!!</P>
-                    <button class="btn">더 알아보기</button>
-                </div>
-            </div>
-            <div class="slide_box">
-                <div class="slide_img">
-                    <img src="img/main_banner3.png" alt="슬라이드3">
-                </div>
-                <div class="slide_txt3">
-                    <span>디아블로 얼티밋<br>도넛킹</span>
-                    <P>PACK 1</P>
-                    <P>50% SALE</P>
-                    <button class="btn">더 알아보기</button>
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
 
     <!-- 역사 -->
     <div class="history">
@@ -182,8 +190,9 @@
         <div class="menulist">
 
             <div class="menu-btn">
-                <span class="prev"><</span>
-                <span class="next">></span>
+                <span class="prev">
+                    <</span>
+                        <span class="next">></span>
             </div>
 
             <div class="menubox">
@@ -263,5 +272,6 @@
             <p>Copyright 2019 BKR Co., Ltd. All right Reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
