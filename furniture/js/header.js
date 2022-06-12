@@ -23,7 +23,6 @@ window.onscroll = () => {
         logo_txt.style.color = "white";
 
         }
-    
 }
 
 // 메뉴 버튼 클릭 시 navbar down 

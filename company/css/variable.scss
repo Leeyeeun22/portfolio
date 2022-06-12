@@ -1,0 +1,41 @@
+/* color */
+$white : white;
+$black : black;
+$btn-color : #444;
+$news-day : rgb(19, 150, 23); /* 새소식 기간 색깔 */
+$footer-color:#eee;
+$prj-span:rgb(125, 125, 125);
+$mb_nav_border : rgb(130, 130, 130);
+$mb_nav_sub_border:rgb(169, 169, 169);
+$mb_nav : #555;
+$mb_sub : rgb(207, 207, 207);
+
+/* media */
+$tablet: 1024px;
+$pc: 1024px;
+$mobile-min: 380px;
+$mobile-max: 767px;
+
+@mixin pc{
+  @media screen and (min-width: $pc){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: $mobile-max){
+    @content;
+  }
+}
+
+@mixin mobile-min{
+  @media screen and (max-width: $mobile-min){
+    @content;
+  }
+}

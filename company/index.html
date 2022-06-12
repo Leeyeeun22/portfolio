@@ -1,15 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>롯데건설</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
+
 <body>
-    <h1>fdfddf</h1>
-    <p>fdfdfd</p>
+    <!-- TOP 버튼 -->
+    <a id="topBtn" href="#">TOP</a>
+
+    <!-- header -->
+    <header id="header">
+
+        <div class="flex inner">
+            <h1 class="logo"><a href="#"><img src="img/header-logo.png" alt="로고"></a></h1>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">회사소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">롯데건설 60년사</a></li>
+                            <li><a href="#">주요연혁</a></li>
+                            <li><a href="#">비전 및 수상현황</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">해외지사</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">주요사업</a>
+                        <ul class="submenu">
+                            <li><a href="#">주택사업</a></li>
+                            <li><a href="#">건축사업</a></li>
+                            <li><a href="#">토목사업</a></li>
+                            <li><a href="#">플랜트사업</a></li>
+                            <li><a href="#">해외사업</a></li>
+                            <li><a href="#">사업별실적 검색</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">기술혁신</a>
+                        <ul class="submenu">
+                            <li><a href="#">기술연구원 소개</a></li>
+                            <li><a href="#">초고층기술</a></li>
+                            <li><a href="#">친환경 녹색기술</a></li>
+                            <li><a href="#">미래인프라기술</a></li>
+                            <li><a href="#">플랜트기술</a></li>
+                            <li><a href="#">보유지식재산권</a></li>
+                            <li><a href="#">보유인증서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">지속가능경영</a>
+                        <ul class="submenu">
+                            <li><a href="#">컴플라이언스</a></li>
+                            <li><a href="#">안전경영</a></li>
+                            <li><a href="#">환경경영</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">동반성장</a></li>
+                            <li><a href="#">지속가능경영보고서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">홍보센터</a>
+                        <ul class="submenu">
+                            <li><a href="#">롯데건설소식</a></li>
+                            <li><a href="#">롯데월드타워</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">CI/BI 소개</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">인재채용</a>
+                        <ul class="submenu">
+                            <li><a href="#">채용안내</a></li>
+                            <li><a href="#">채용지원현황</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+            <div class="rightmenu">
+                <a href="#">고객센터</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="mb_nav">
+        <ul>
+            <li><a href="#">회사소개</a>
+                <ul class="submenu">
+                    <li><a href="#">CEO 인사말</a></li>
+                    <li><a href="#">롯데건설 60년사</a></li>
+                    <li><a href="#">주요연혁</a></li>
+                    <li><a href="#">비전 및 수상현황</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">해외지사</a></li>
+                </ul>
+            </li>
+            <li><a href="#">주요사업</a>
+                <ul class="submenu">
+                    <li><a href="#">주택사업</a></li>
+                    <li><a href="#">건축사업</a></li>
+                    <li><a href="#">토목사업</a></li>
+                    <li><a href="#">플랜트사업</a></li>
+                    <li><a href="#">해외사업</a></li>
+                    <li><a href="#">사업별실적 검색</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기술혁신</a>
+                <ul class="submenu">
+                    <li><a href="#">기술연구원 소개</a></li>
+                    <li><a href="#">초고층기술</a></li>
+                    <li><a href="#">친환경 녹색기술</a></li>
+                    <li><a href="#">미래인프라기술</a></li>
+                    <li><a href="#">플랜트기술</a></li>
+                    <li><a href="#">보유지식재산권</a></li>
+                    <li><a href="#">보유인증서</a></li>
+                </ul>
+            </li>
+            <li><a href="#">지속가능경영</a>
+                <ul class="submenu">
+                    <li><a href="#">컴플라이언스</a></li>
+                    <li><a href="#">안전경영</a></li>
+                    <li><a href="#">환경경영</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">동반성장</a></li>
+                    <li><a href="#">지속가능경영보고서</a></li>
+                </ul>
+            </li>
+            <li><a href="#">홍보센터</a>
+                <ul class="submenu">
+                    <li><a href="#">롯데건설소식</a></li>
+                    <li><a href="#">롯데월드타워</a></li>
+                    <li><a href="#">홍보자료</a></li>
+                    <li><a href="#">CI/BI 소개</a></li>
+                </ul>
+            </li>
+            <li><a href="#">인재채용</a>
+                <ul class="submenu">
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">채용지원현황</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 배너슬라이드 -->
+    <section class="banner">
+            <div class="banner_img">
+                <img src="img/banner_1.png" alt="">
+            </div>
+            <div class="banner_img">
+                <img src="img/banner_2.png" alt="">
+
+            </div>
+            <div class="banner_img">
+                <img src="img/banner_3.png" alt="">
+
+            </div>        
+    </section>
+
+    <!-- 주요사업 -->
+    <section class="business">
+        <div class="heading"><h2>주요사업</h2></div>
+
+        <div class="business-container">
+            <div class="box">
+                <img src="img/business01.png" alt="건축사업">
+                <span>건축사업</span>
+            </div>
+            <div class="box">
+                <img src="img/business02.png" alt="주택사업">
+                <span>주택사업</span>
+            </div>
+            <div class="box">
+                <img src="img/business03.png" alt="토목사업">
+                <span>토목사업</span>
+            </div>
+            <div class="box">
+                <img src="img/business04.png" alt="플랜트사업">
+                <span>플랜트사업</span>
+            </div>
+            <div class="box">
+                <img src="img/business05.png" alt="해외사업">
+                <span>해외사업</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요연혁 -->
+    <section class="history">
+
+            <div class="heading"><h2>주요연혁</h2></div>
+
+            <div class="history-container">
+                <div class="box">
+                    <img src="img/history01.png" alt="2018년 우수파트너사 시상식">
+
+                </div>
+                <div class="box">
+                    <h3>무한한 창의력과 도전정신으로 지속적인 성장 추구</h3>
+    
+                    <p>1959년 설립된 롯데건설은<br/>
+                        토목사업, 건축사업, 주택사업 등을<br/>
+                        선도하고 있는 글로벌 종합 건설회사입니다.</p>
+    
+                    <div class="btn">더보기</div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- project -->
+    <section class="project">
+
+        <div class="heading"><h2>주요 프로젝트</h2></div>
+        <div class="project-container inner">
+            <div class="box">
+                <img src="img/project01.png" alt="문산~도라산 고속도로">
+
+                <div class="box-txt">
+                    <h3>문산~도라산 고속도로 [2공구]</h3>
+                    <p><span>공사위치</span> : 파주시 월롱면 능산리~장단면 도라산리</p>
+                    <p><span>공사규모</span> : 총연장 7.16km, 사장교[1.8km], 일반교량 11개소</p>
+                    <p><span>발주처</span> : 한국도로공사</p>
+                    <p><span>공사기간</span> : 2030-10 ~ 2030-10</p>
+                </div>
+                
+            </div>
+            <div class="box">
+                <img src="img/project02.png" alt="만덕-센텀 도시고속화도로">
+                <div class="box-txt">
+                    <h3>만덕-센텀 도시고속화도로</h3>
+                    <p><span>공사위치</span> : 부산광역시 북구 만덕동 ~ 동래구 온천동</p>
+                    <p><span>공사규모</span> : 총연장 : 4.09km</p>
+                    <p><span>발주처</span> : 부산동서고속화도로㈜</p>
+                    <p><span>공사기간</span> : 2019-11 ~ 2029-12</p>
+                </div>            
+            </div>
+            <div class="box">
+                <img src="img/project03.png" alt="">
+                <div class="box-txt">
+                    <h3>영동대로 지하공간 복합개발 4공구</h3>
+                    <p><span>공사위치</span> : 강남구 삼성역 사거리 일대</p>
+                    <p><span>공사규모</span> : 연장382m[복합환승센터 59.5m, 철도본선 322.5m<br/> 삼성역확장59.5m, 본선환기구1개소]</p>
+                    <p><span>발주처</span> : 서울특별시 도시기반시설본부</p>
+                    <p><span>공사기간</span> : 2021-02 ~ 2028-04</p>
+                </div>                 
+            </div>
+                
+        </div>
+        <div class="btn">더보기</div>
+    </section>
+
+
+        <!-- fix_banner -->
+        <section class="fix_banner">
+            <div class="fix_img">
+
+                <div class="fix-container">
+                    <div class="box">
+                        <h3>롯데건설 60년사<br/>
+                            LOTTE E&C 60th Anniversary Edition
+                            </h3>
+                        <p>60주년 기념 사사를 편찬했습니다.<br/>
+                            롯데건설의 역사를 만나보세요!
+                            </p>
+                        <div class="btn">e-book 보기</div>
+                    </div>
+
+                    <div class="box">
+                        <img src="img/fix_img.png" alt="60주년 기념 사사">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    <!-- 소식 -->
+    <section class="news">
+        <div class="heading"><h2>LOTTE E&C / News</h2></div>
+
+        <div class="news-container">
+            <div class="box">
+                <img src="img/news01.png" alt="새소식1">
+                <p>공지사항</p>
+                <p>마을풍력 발전사업 통해 ESG경영 박차</p>
+                <p>2022.06.09</p>
+            </div>
+            <div class="box">
+                <img src="img/news02.png" alt="새소식2">
+                <p>보도자료</p>
+                <p>KLPGA 2022 롯데오픈’에서 분양과
+                    스마트 기술 홍보</p>
+                <p>2022.06.02</p>
+            </div>
+            <div class="box">
+                <img src="img/news03.png" alt="새소식3">
+                <p>보도자료</p>
+                <p>서울 돈암6구역 주택재개발 정비사업 수주</p>
+                <p>2022.05.29</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+
+        <div class="footer-container">
+
+            <div class="box">
+                <p>서울시 서초구 잠원로14길 29 (잠원동 50-2) | 대표전화 02-3480-9114 | 개인정보처리방침</p>
+                <p>COPYRIGHT © 2012 LOTTE ENGINEERING & CONSTRUCTION ALL RIGHT RESERVED.</p>
+            </div>
+
+            <div class="flex_box">
+                <div class="ft_logo">
+                    <img src="img/logo_footer.png" alt="하단로고">
+                </div>
+                <div class="right_img">
+                    <img src="img/footer_img1.png" alt="아파트부문수상">
+                    <img src="img/footer_img2.png" alt="한국장애인단체총연합회">
+                    <img src="img/footer_img3.gif" alt="가족진화우수관">
+                </div>
+                
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
