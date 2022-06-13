@@ -62,14 +62,44 @@ $('.nav li').mouseout(function () {
 });
 
 
-// 페이드 인 아웃 슬라이드
-$('.banner > div:gt(0)').hide();
 
-setInterval(function(){
-    $('.banner > div:first')
-        .fadeOut(2000)
-        .next()
-        .fadeIn(2000)
-        .end()
-        .appendTo('.banner');
-},3000);
+// 페이드 인 아웃 슬라이드
+
+let key = null;
+
+// 자동재생
+function auto(){
+    $('.slide > div:gt(0)').hide();
+
+    key = setInterval(function(){
+        $('.slide > div:first')
+            .fadeOut(3000)
+            .next()
+            .fadeIn(3000)
+            .end()
+            .appendTo('.slide');
+    },4000);
+}
+
+auto(); // 함수 실행
+
+// 중지 함수 선언
+function pause(){
+    clearInterval(key);
+}
+
+// 중지버튼 클릭 시 중지 함수 실행
+$('.stop').on('click',function(){
+    pause();
+    $('.stop').addClass('on');
+    $('.play').removeClass('on');
+
+});
+
+// 실행버튼 클릭 시 자동재생 함수 실행
+$('.play').on('click',function(){
+    auto();
+    $('.play').addClass('on');
+    $('.stop').removeClass('on');
+
+})

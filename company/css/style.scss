@@ -150,13 +150,20 @@ html {
     font-size: 1.3rem;
     width:3rem;
     height:3rem;
-    border:1px solid #ccc;
+    border:1px solid #aaa;
     line-height: 3rem;
     text-align: center;
     color:$black;
-    background-color: #eee;
+    background-color: $white;
     border-radius: 25px/30px;
-    } 
+    color:#aaa;
+
+    p{
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+} 
 
 
 /* 모바일 메뉴 */
@@ -215,7 +222,12 @@ html {
     height: 42rem;
     margin-top: 5rem;
     position: relative;
-    overflow: hidden;
+
+    .slide{
+        width:100%;
+        height:100%;
+        position: relative;
+        overflow: hidden;
 
         .banner_img {
             position: absolute;
@@ -228,8 +240,80 @@ html {
                 height: 100%;
                 object-fit: cover;
             }
+
+            .txt{
+                position: absolute;
+                left:20%;
+                top:50%;
+                transform: translateY(-50%);
+                line-height: 2;
+
+
+                @include mobile{
+                    padding:0 3rem;
+                    width:100%;
+                    left:50%; top:50%;
+                    transform: translate(-50%,-50%);
+                }
+
+                h2{
+                    font-size: 2.7rem;
+                    font-weight: bold;
+                    color:$white;
+                    text-shadow: 2px 2px 2px rgb(176, 176, 176);
+
+
+                    @include mobile{
+                        font-size: 2.3rem;
+                    }
+                }
+
+                p{
+                    font-size: 1.3rem;
+                    color:$white;
+                    text-shadow: 2px 2px 2px rgb(176, 176, 176);
+                }
+            }
             
         }
+    }
+
+    .banner_btn{
+        position: absolute;
+        bottom:3%; left:50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        text-align: center;
+
+        .play{
+            background-color: rgba(0, 0, 0, 0.486);
+            padding:.5rem 1rem;
+            border-radius: 100%;
+            color:$white;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            &.on{
+                background-color: rgba(255, 255, 255, 0.486);
+                color:$banner_btn_on;
+            }
+        }
+
+        .stop{
+            background-color: rgba(0, 0, 0, 0.486);
+            padding:.5rem 1rem;
+            border-radius: 100%;
+            color:$white;
+            font-size: 1.2rem;
+           cursor: pointer;
+
+           &.on{
+            background-color: rgba(255, 255, 255, 0.486);
+            color:$banner_btn_on;
+        }
+
+        }
+    }
 
 }
 
@@ -303,7 +387,7 @@ html {
             }
 
             img {
-                height: 19rem;
+                width:100%;
             }
 
             .btn {
@@ -327,6 +411,20 @@ html {
             gap: 2rem;
             padding: 2rem 3rem;
 
+            @include mobile{
+                padding:2rem 1rem;
+            }
+
+            img{
+
+                @include mobile{
+                    @media screen and (max-width: $mobile-max){
+                        width:100%;
+                    }
+                  }
+                
+            }
+
             &:nth-of-type(2) {
                 flex-direction: row-reverse;
             }
@@ -337,9 +435,13 @@ html {
                 span {
                     color: $prj-span;
                 }
-
             }
+
         }
+    }
+
+    .btn{
+        line-height: 2;
     }
 }
 
@@ -443,12 +545,23 @@ html {
                     color: $news-day;
                 }
             }
+
+            img{
+
+                @include mobile{
+                    @media screen and (max-width: $mobile-max){
+                        width:100%;
+                    }
+                  }
+                
+            }
         }
     }
 }
 
 /* footer */
 #footer {
+    width:100%;
     background-color: $footer-color;
     padding: 4rem 3rem;
     margin-top: 5rem;
